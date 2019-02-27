@@ -5,6 +5,9 @@
  */
 package ecommerce;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author alunoces
@@ -16,9 +19,21 @@ public class Ecommerce {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    }
-    public class ItemCarrinho{
+        
+        float totalItem;
+        
+        List<ItemCarrinho> listaItem = new ArrayList<>();
+        
+        ItemCarrinho itn1 = new ItemCarrinho(2.0f, 10);
+        ItemCarrinho itn2 = new ItemCarrinho(3.0f, 15); 
+    
+        listaItem.add(itn1);
+        listaItem.add(itn2);
+        
+        ConteudoCarrinho conteudo = new ConteudoCarrinho();
+        conteudo.setItemCarrinho(listaItem);
+                       
         
     }
-    
+       
 }
