@@ -12,13 +12,13 @@ package ecommerce;
 public class ItemCarrinho {
     public float preco;
     public int quantidade;
-    public float totalItem;
+
 
 //Construtor
-     public ItemCarrinho(float preco, int quantidade, float totalItem) {
+     public ItemCarrinho(float preco, int quantidade) {
         this.preco = preco;
         this.quantidade = quantidade;
-        this.totalItem = totalItem;
+        
     }
 // Get e set
     public float getPreco() {
@@ -41,8 +41,5 @@ public class ItemCarrinho {
         return preco * quantidade;
     }
 
-    public void setTotalItem(float totalItem) {
-        this.totalItem = totalItem;
-    }
     
 }

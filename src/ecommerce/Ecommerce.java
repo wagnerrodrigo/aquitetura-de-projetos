@@ -20,20 +20,25 @@ public class Ecommerce {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        float totalItem;
+        float totalItem = 0;
         
         List<ItemCarrinho> listaItem = new ArrayList<>();
         
         ItemCarrinho itn1 = new ItemCarrinho(2.0f, 10);
         ItemCarrinho itn2 = new ItemCarrinho(3.0f, 15); 
-    
+       
         listaItem.add(itn1);
         listaItem.add(itn2);
         
         ConteudoCarrinho conteudo = new ConteudoCarrinho();
         conteudo.setItemCarrinho(listaItem);
-                       
+        // listar conteudo dos carrinho  preco e quantidade e valor total
+//        for(int i = 0; i < listaItem.size() ;i++){           
+//        }
+        Compra compra = new Compra(conteudo,2.0f);
         
+        // mostrar cada item e o valor total da compra
+        System.out.println(compra.valorTotal(conteudo, totalItem));
     }
        
 }

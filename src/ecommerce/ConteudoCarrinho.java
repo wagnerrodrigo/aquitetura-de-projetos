@@ -6,6 +6,7 @@
 package ecommerce;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -29,9 +30,11 @@ public class ConteudoCarrinho {
     public float getTotalCarrinho(){
         float total = 0;
         
-        for(ItemCarrinho item : itens){
-           total += item.getTotalItem();
+        for (int i = 0; i<=itemCarrinho.size()-1;i++) {
+            
+            total += itemCarrinho.get(i).getTotalItem();
         }
+        
         return total;
     }
 }
