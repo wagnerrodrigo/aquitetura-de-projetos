@@ -10,5 +10,23 @@ package transferroviario;
  * @author alunoces
  */
 public class Vagao {
+    private String codigoVagao;
+    private float pesoVagao;
+
+    public String getCodigoVagao() {
+        return codigoVagao;
+    }
+
+    public void setCodigoVagao(String codigoVagao) {
+        this.codigoVagao = codigoVagao;
+    }
+
+    public float getPesoVagao() {
+        return pesoVagao;
+    }
+
+    public void setPesoVagao(float pesoVagao) {
+        this.pesoVagao = pesoVagao;
+    }
     
 }

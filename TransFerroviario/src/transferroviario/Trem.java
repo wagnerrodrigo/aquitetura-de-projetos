@@ -12,6 +12,7 @@ package transferroviario;
 public class Trem {
     private String prefixoTrem ;
     private String dataFormacao;
+    public Composicao[] comosicao;
 
     public String getPrefixoTrem() {
         return prefixoTrem;
