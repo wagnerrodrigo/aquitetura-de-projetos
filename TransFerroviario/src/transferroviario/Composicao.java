@@ -15,7 +15,19 @@ import java.util.List;
 public class Composicao {
     private int idComposicao;
     private List<Vagao> vagao = new ArrayList<>();
+    public float pesoComposicao;
+    public int QtVagao;
 
+   
+    
+    // Construtor
+    public Composicao(int idComposicao, float pesoComposicao, int QtVagao) {
+        this.idComposicao = 1;
+        this.pesoComposicao = 24000;
+        this.QtVagao = 3;
+    }
+
+    
 //get set
     public int getIdComposicao() {
         return idComposicao;
@@ -39,5 +51,15 @@ public class Composicao {
     
     public float getPesoComposicao(){
         return 0; // colocar qual é o valor da composição numeros de vagões
+    }
+    
+    // metodo tostring
+    public String toString(){
+    String str = "";
+    str = str + "\nIdComposição: --> "+idComposicao;
+    str = str + "\nPeso Composição: -->"+pesoComposicao;
+    str = str + "\nQuantidade Vagões: -->"+QtVagao;
+    
+    return str;
     }
 }
