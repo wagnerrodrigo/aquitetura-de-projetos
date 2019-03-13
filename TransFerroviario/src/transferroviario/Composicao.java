@@ -22,9 +22,9 @@ public class Composicao {
     
     // Construtor
     public Composicao(int idComposicao, float pesoComposicao, int QtVagao) {
-        this.idComposicao = 1;
-        this.pesoComposicao = 24000;
-        this.QtVagao = 3;
+        this.idComposicao = idComposicao;
+        this.pesoComposicao = pesoComposicao;
+        this.QtVagao = QtVagao;
     }
 
     
@@ -45,19 +45,21 @@ public class Composicao {
         this.vagao = vagao;
     }
 // metodos
-    public String getDataFormacao(){
-        return ""; // colocar data de formação do vagao
-    }
+   
     
     public float getPesoComposicao(){
-        return 0; // colocar qual é o valor da composição numeros de vagões
+        float total = 0;
+        for (int i = 0; i <=vagao.size()-1; i++) {
+            total += vagao.get(i).getPesoVagao();
+        }
+        return total; // colocar qual é o valor da composição numeros de vagões
     }
     
     // metodo tostring
     public String toString(){
     String str = "";
     str = str + "\nIdComposição: --> "+idComposicao;
-    str = str + "\nPeso Composição: -->"+pesoComposicao;
+    str = str + "\nPeso da Composição: -->"+pesoComposicao;
     str = str + "\nQuantidade Vagões: -->"+QtVagao;
     
     return str;
