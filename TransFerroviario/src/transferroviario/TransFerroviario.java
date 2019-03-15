@@ -16,6 +16,8 @@ public class TransFerroviario {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Vagao vagao = new Vagao("1",2000f );
+       System.out.println(vagao);
     }
     
 }

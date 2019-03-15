@@ -13,6 +13,11 @@ public class Vagao {
     private String codigoVagao;
     private float pesoVagao;
 
+    public Vagao(String codigoVagao, float pesoVagao) {
+        this.codigoVagao = codigoVagao;
+        this.pesoVagao = pesoVagao;
+    }
+
     public String getCodigoVagao() {
         return codigoVagao;
     }
@@ -29,4 +34,13 @@ public class Vagao {
         this.pesoVagao = pesoVagao;
     }
     
+    
+    // metodo tostring
+    
+    public String toString(){
+    String str = "";
+    str = str + "\nCodigo do Vagão: --> "+codigoVagao;
+    str = str + "\nPeso do Vagão: -->"+pesoVagao;   
+    return str;
+    }
 }
