@@ -12,14 +12,15 @@ package transferroviario;
 public class Trem {
     private String prefixoTrem ;
     private String dataFormacao;
-    public Composicao[] comosicao;
+    public Composicao composicao;
 
+    public Trem(String prefixoTrem, Composicao composicao) {
+        this.prefixoTrem = prefixoTrem;
+        this.composicao = composicao;
+    }
+    
     public String getPrefixoTrem() {
         return prefixoTrem;
-    }
-
-    public void setPrefixo_Trem(String prefixoTrem) {
-        this.prefixoTrem = prefixoTrem;
     }
 
     public String getDataFormacao() {
@@ -29,4 +30,13 @@ public class Trem {
     public void setData_Formacao(String dataFormacao) {
         this.dataFormacao = dataFormacao;
     }
+
+    @Override
+    public String toString() {
+        return "Trem{"
+                + "prefixoTrem=" + prefixoTrem 
+                + ", dataFormacao=" + dataFormacao 
+                + ", comosicao=" + composicao + '}';
+    }
+    
 }

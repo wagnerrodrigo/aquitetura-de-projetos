@@ -13,18 +13,13 @@ import java.util.List;
  * @author alunoces
  */
 public class Composicao {
-    private int idComposicao;
-    private List<Vagao> vagao = new ArrayList<>();
-    public float pesoComposicao;
-    public int QtVagao;
 
-   
+    private int idComposicao;
+    private List<Vagao> listaVagao = new ArrayList<>();
     
     // Construtor
-    public Composicao(int idComposicao, float pesoComposicao, int QtVagao) {
+    public Composicao(int idComposicao) {
         this.idComposicao = idComposicao;
-        this.pesoComposicao = pesoComposicao;
-        this.QtVagao = QtVagao;
     }
 
     
@@ -38,30 +33,34 @@ public class Composicao {
     }
 
     public List<Vagao> getVagao() {
-        return vagao;
+        return listaVagao;
     }
 
-    public void setVagao(List<Vagao> vagao) {
-        this.vagao = vagao;
-    }
+    public void setVagao(Vagao vagao) {
+        listaVagao.add(vagao);
+   }
 // metodos
    
     
     public float getPesoComposicao(){
         float total = 0;
-        for (int i = 0; i <=vagao.size()-1; i++) {
-            total += vagao.get(i).getPesoVagao();
+        for (int i = 0; i <=listaVagao.size()-1; i++) {
+            total += listaVagao.get(i).getPesoVagao();
         }
         return total; // colocar qual é o valor da composição numeros de vagões
     }
     
-    // metodo tostring
-    public String toString(){
-    String str = "";
-    str = str + "\nIdComposição: --> "+idComposicao;
-    str = str + "\nPeso da Composição: -->"+pesoComposicao;
-    str = str + "\nQuantidade Vagões: -->"+QtVagao;
+    public int getQuantVagao(){         
+        return listaVagao.size();
+    }
     
+    // metodo tostring
+    public String getComposicaoVagao(){
+    String str = "";    
+    str = str + "\nIdComposição: --> "+idComposicao +"\n";
+    for (int i = 0; i <=listaVagao.size()-1; i++) {        
+        str = str + "Codigo/Peso Vagao - :" + listaVagao.get(i).getCodigoVagao()+"  /  "+ listaVagao.get(i).getPesoVagao()+"\n";
+        }
     return str;
     }
 }
