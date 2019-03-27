@@ -1,0 +1,36 @@
+
+Descricao: Inicio da verificacao numero 0
+------------
+6955 >> 6955
+Descricao: Nao houve troca pois o numero 6 ja eh menor/igual que 9
+
+6955 >> 6595
+Descricao: Trocou-se o digito 9 pelo 5
+
+6595 >> 6559
+Descricao: Trocou-se o digito 9 pelo 5
+
+
+Descricao: Inicio da verificacao numero 1
+------------
+6559 >> 5659
+Descricao: Trocou-se o digito 6 pelo 5
+
+5659 >> 5569
+Descricao: Trocou-se o digito 6 pelo 5
+
+5569 >> 5569
+Descricao: Nao houve troca pois o numero 6 ja eh menor/igual que 9
+
+
+Descricao: Inicio da verificacao numero 2
+------------
+5569 >> 5569
+Descricao: Nao houve troca pois o numero 5 ja eh menor/igual que 5
+
+5569 >> 5569
+Descricao: Nao houve troca pois o numero 5 ja eh menor/igual que 6
+
+5569 >> 5569
+Descricao: Nao houve troca pois o numero 6 ja eh menor/igual que 9
+
