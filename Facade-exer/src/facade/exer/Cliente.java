@@ -12,6 +12,10 @@ package facade.exer;
 public class Cliente {
      public static void main(String[] args) {
         // TODO code application logic here
+         FacadeExer facade = new FacadeExer();
+         String imagem = "img";
+         
+         System.out.println(facade.renderizarImagem(imagem));
     }
     
 }

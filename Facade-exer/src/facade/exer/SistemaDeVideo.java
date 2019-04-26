@@ -18,7 +18,7 @@ public class SistemaDeVideo {
     
     }
     
-    public void renderizarImagem(String imagem){
-    
+    public String renderizarImagem(String imagem){
+        return "Imgaen da classe" + imagem;
     }
 }

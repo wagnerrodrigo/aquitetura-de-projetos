@@ -18,17 +18,18 @@ public class FacadeExer {
    protected SistemaDeInput input;
    protected SistemaDeVideo video;
    
-   
+    
    public void inicializarSubsistema(){
    
    }
    public void reproduzirAudio(String arquivo) {
-   
+       audio.reproduzirAudio(arquivo);
    }
    
    
-   public void renderizarImagem(String imagem){
-   
+   public String renderizarImagem(String imagem){
+       video = new SistemaDeVideo();
+       return video.renderizarImagem(imagem);
    }
    
    public void lerInput(){
