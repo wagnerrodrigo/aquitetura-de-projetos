@@ -20,6 +20,21 @@ public class FacadeExer {
    
     
    public void inicializarSubsistema(){
+       
+       audio = new SistemaDeAudio();
+       input = new SistemaDeInput();
+       video = new SistemaDeVideo();
+       
+       
+       audio.configurarCanais();
+       audio.configurarFrequencia();
+       audio.configurarVolume();
+       
+       input.configurarJoystick();
+       input.configurarTeclado();
+       
+       video.configurarCores();
+       video.configurarResolucao();
    
    }
    public void reproduzirAudio(String arquivo) {
@@ -28,11 +43,10 @@ public class FacadeExer {
    
    
    public String renderizarImagem(String imagem){
-       video = new SistemaDeVideo();
        return video.renderizarImagem(imagem);
    }
    
    public void lerInput(){
-   
+      
    }
 }
