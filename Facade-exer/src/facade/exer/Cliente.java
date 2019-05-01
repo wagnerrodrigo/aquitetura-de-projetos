@@ -14,6 +14,13 @@ public class Cliente {
         // TODO code application logic here
          FacadeExer facade = new FacadeExer();
          String imagem = "img";
+         String audio = "audio";
+         
+         
+         facade.inicializarSubsistema();
+         facade.lerInput();
+         facade.reproduzirAudio(audio);
+         facade.renderizarImagem(imagem);
          
          System.out.println(facade.renderizarImagem(imagem));
     }
