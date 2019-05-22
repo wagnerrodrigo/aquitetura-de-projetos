@@ -10,5 +10,5 @@ package strategy;
  * @author alunoces
  */
 public interface CalculaImposto {
-    double  calculaSalarioComImposto(Funcionario umFuncionario);
+   
 }
